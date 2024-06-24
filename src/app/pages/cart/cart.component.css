@@ -1,0 +1,121 @@
+.cart {
+  width: 100%;
+  height: 100vh;
+}
+
+.cart-container {
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: 100px;
+    left: 1px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5%;
+  }
+
+  .container {
+    width: 40%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: space-around;
+    font-family: "Lato", sans-serif;
+  }
+  
+  .cart-item-card {
+    border-radius: 7px;
+    width: 96.5%;
+    height: 165;
+    display: flex;
+    gap: 5%;
+    overflow: hidden;
+    background-color: rgb(35, 35, 35);
+  }
+  
+  .cart-item-body {
+    width: 35%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    background-color: rgb(35, 35, 35);
+  }
+
+  .img {
+    width: 30%;
+  }
+
+  .img img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  p {
+    color: gold;
+    background-color: rgb(35, 35, 35);
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: rgb(35, 35, 35);
+  }
+  
+  button {
+    width: 130px;
+    height: 40px;
+    color: gold;
+    border: 1px solid gold;
+    border-radius: 2px;
+    font-size: 18px;
+    cursor: pointer;
+    transition-delay: 0.1s;
+    transition-duration: 0.3s;
+    background-color: rgb(35, 35, 35);
+  }
+
+button:hover {
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+  h2 {
+    color: #fff;
+    background-color: rgb(35, 35, 35);
+  }
+
+  .Product-data {
+    width: 30%;
+    height: 300px;
+    background-color: rgb(35, 35, 35);
+    border-radius: 7px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-family: "Lato", sans-serif;
+  }
+
+  hr {
+    color: gold;
+  }
+
+  .Product-data p {
+    color: #fff;
+    font-size: 30px;
+    background-color: rgb(35, 35, 35);
+    margin-left: 5%;
+  }
+
+  .Product-data span {
+    color: gold;
+    background-color: rgb(35, 35, 35);
+  }
+
+  .Product-data button {
+    width: 90%;
+    margin-left: 5%;
+    border-radius: 10px;
+  }

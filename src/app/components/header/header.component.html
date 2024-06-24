@@ -1,0 +1,26 @@
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<div class="header">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" routerLink="/">LuxeLoot</a>
+    
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/products">Products</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/cart">Cart</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+    <div class="search-input">
+      <input type="search" #searchInput placeholder="Search">
+      <i class="fa-solid fa-magnifying-glass" (click)="searchProduct(searchInput.value)"></i>
+    </div>        
+  </nav>
+</div>
+  

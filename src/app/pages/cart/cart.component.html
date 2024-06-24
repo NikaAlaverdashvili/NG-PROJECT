@@ -1,0 +1,28 @@
+<div class="cart">
+<div class="cart-container">
+  <div class="container">
+    <div *ngFor="let item of cartItems; let i = index" class="cart-item-card">
+      <div class="img">
+        <img [src]="item.images[0]" alt="{{item.title}}">
+      </div>
+      <div class="cart-item-body">
+        <h2>{{ item.title }}</h2>
+        <p>${{ item.price }}</p>
+      </div>
+      <div class="buttons">
+        <button>Buy</button>
+        <button (click)="removeFromCart(i)">Remove</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="Product-data">
+    <p class="Quantity">Number of Products: <span>{{ totalQuantity }}</span></p>
+    <p class="Price">Total Price: <span>${{ totalPrice }}</span></p>
+    <p>Shipping Cost: <span>${{ shippingCost }}</span></p>
+    <hr>
+    <p>Amount To Be Paid: <span>${{ amountToBePaid }}</span></p>
+    <button>Next</button>
+  </div>
+</div>
+</div>

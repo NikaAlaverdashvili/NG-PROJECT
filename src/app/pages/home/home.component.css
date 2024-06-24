@@ -1,0 +1,157 @@
+.home {
+    width: 100%;
+    height: auto;
+}
+
+.container {
+    width: 100%;
+    height: auto;
+    background-color: rgb(53, 52, 52);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.products-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.products {
+    width: 90%;
+    height: 500px;
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 5%;
+    animation-name: opacity;
+}
+
+
+
+
+
+.card {
+    width: 15%;
+    font-family: "Lato", sans-serif;
+    color: #fff;
+    cursor: pointer;
+    transition-delay: 0.1s;
+    transition-duration: 0.3s;
+    overflow: hidden;
+}
+
+.card:hover {
+    color: gold;
+}
+
+.card img {
+    width: 100%;
+}
+
+.card p {
+    color: gold;
+    overflow: hidden;
+}
+
+
+.categories-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 20;
+    font-family: "Lato", sans-serif;
+}
+
+.clothes {
+    width: 90%;
+    justify-content: space-between;
+    display: flex;
+    border: 1px soli gold;
+}
+
+.electronics {
+    width: 90%;
+    justify-content: space-between;
+    display: flex;
+    border: 1px soli gold;
+}
+
+.furniture {
+    width: 90%;
+    justify-content: space-between;
+    display: flex;
+    border: 1px soli gold;
+}
+
+.shoes {
+    width: 90%;
+    justify-content: space-between;
+    display: flex;
+    border: 1px soli gold;
+}
+
+.other {
+    width: 90%;
+    justify-content: space-between;
+    display: flex;
+    border: 1px soli gold;
+}
+
+
+.categories-container .card {
+    width: 10%;
+}
+
+
+
+.card {
+    width: 15%;
+    color: #fff;
+    cursor: pointer;   
+    transition-delay: 0.1s;
+    transition-duration: 0.3s;
+}
+
+
+h2 {
+    margin-top: 80px;
+    margin-left: 5.5%;
+    color: gold;
+    font-family: "Playwrite NG Modern", cursive;
+}
+
+#categories {
+    margin-top: 100px;
+    margin-left: 5.5%;
+    font-size: 40px;
+    color: #fff;
+    font-family: "Playwrite NG Modern", cursive;
+}
+
+#shop {
+    margin-top: 50px;
+    margin-left: 5%;
+    font-family: "Playwrite NG Modern", cursive;
+    color: #fff;
+}
+
+span {
+    color: gold;
+}
+
+#shop p {
+    font-size: 20px;
+    color: gold;
+}
+
+h2 {
+    width: 95%;
+    margin-bottom: 10px;
+}
+
+

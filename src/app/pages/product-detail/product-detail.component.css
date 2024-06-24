@@ -1,0 +1,54 @@
+.product-detail-container {
+    width: 100%;
+    height: 90vh;
+    position: relative;
+    top: 5px;
+    background-color: rgb(53, 52, 52);
+    font-family: "Lato", sans-serif;
+}
+
+img {
+    position: relative;
+    top: 100px;
+    left: 55%;
+    width: 40%;
+    height: 600px;
+}
+
+.product-detail-body {
+    position: absolute;
+    top: 100px;
+    left: 5%;
+    width: 40%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+}
+
+h1 {
+    color: gold;
+}
+
+.product-detail-body p {
+    font-size: 20px;
+    color: #fff;
+}
+
+
+button {
+    width: 40%;
+    height: 50px;
+    font-size: 20px;
+    border: 1px solid gold; 
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    transition-delay: 0.1s;
+    transition-duration: 0.3s;
+}
+
+button:hover {
+    border: 1px solid #fff;
+    color: gold;
+}

@@ -1,0 +1,57 @@
+
+<div class="contact-container">
+  
+
+    <div class="contact">
+
+        <div class="social-media">
+            <h3>Follow Us</h3>
+            <a href="https://www.facebook.com" target="_blank">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="https://www.twitter.com" target="_blank">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://ge.linkedin.com/" target="_blank">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+          </div>
+
+    <div class="contact-info">
+      <p><strong>Address:</strong> 11 Constitution Street, Tbilisi, Georgia</p>
+      <p><strong>Phone:</strong> +995 456 789</p>
+      <p><strong>Email:</strong> luxeloot&#64;gmail.com</p>
+    </div>
+  
+</div>
+
+    <div class="contact-form">
+      <h3>Send Us a Message</h3>
+      <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" ngModel required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" ngModel required>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" ngModel required></textarea>
+        </div>
+        <button type="submit" [disabled]="contactForm.invalid">Submit</button>
+      </form>
+    </div>
+
+  
+
+    <div class="map">
+      <h3>Our Location</h3>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1334.7416342871275!2d44.739645193278385!3d41.72267754079269!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x404473f1e984eb5b%3A0xc9bc4f7477b26c2e!2sIT%20Academy%20STEP%20Georgia!5e0!3m2!1ska!2sge!4v1719234441139!5m2!1ska!2sge"></iframe>
+    </div>
+  </div>
+<app-footer></app-footer>

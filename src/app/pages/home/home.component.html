@@ -1,0 +1,83 @@
+<div class="home">
+<div class="container">
+  <div id="shop">
+  <h1>Welcome to the Online Store <span>LuxeLoot</span></h1>
+  <p>Find the best products here!</p>
+</div>
+
+<div class="products-container">
+  <div class="products">
+    <div *ngFor="let product of products" class="card" (click)="goToProductDetail(product.id)">
+      <img [src]="product.images[0]" alt="{{product.title}}">
+      <div class="card-body">
+        <h5 class="card-title">{{ product.title }}</h5>
+        <p class="card-text">${{ product.price }}</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<h2 id="categories">categories</h2>
+
+<div class="categories-container">
+  <h2>Clothes</h2>
+  <div class="clothes">
+    <div *ngFor="let cloth of clothes" class="card" (click)="goToProductDetail(cloth.id)">
+      <img [src]="cloth.images[0]" alt="{{cloth.title}}">
+      <div class="card-body">
+        <h5 class="card-title">{{ cloth.title }}</h5>
+        <p class="card-text">${{ cloth.price }}</p>
+      </div>
+    </div>
+  </div>
+
+  <h2>Electronics</h2>
+  <div class="electronics">
+    <div *ngFor="let electronic of electronics" class="card" (click)="goToProductDetail(electronic.id)">
+      <img [src]="electronic.images[0]" alt="{{electronic.title}}">
+      <div class="card-body">
+        <h5 class="card-title">{{ electronic.title }}</h5>
+        <p class="card-text">${{ electronic.price }}</p>
+      </div>
+    </div>
+  </div>
+
+  <h2>Furniture</h2>
+  <div class="furniture">
+    <div *ngFor="let item of furniture" class="card" (click)="goToProductDetail(item.id)">
+      <img [src]="item.images[0]" alt="{{item.title}}">
+      <div class="card-body">
+        <h5 class="card-title">{{ item.title }}</h5>
+        <p class="card-text">${{ item.price }}</p>
+      </div>
+    </div>
+  </div>
+
+  <h2>Shoes</h2>
+  <div class="shoes">
+    <div *ngFor="let shoe of shoes" class="card" (click)="goToProductDetail(shoe.id)">
+      <img [src]="shoe.images[0]" alt="{{shoe.title}}">
+      <div class="card-body">
+        <h5 class="card-title">{{ shoe.title }}</h5>
+        <p class="card-text">${{ shoe.price }}</p>
+      </div>
+    </div>
+  </div>
+
+  <h2>Other</h2>
+  <div class="other">
+    <div *ngFor="let item of other" class="card" (click)="goToProductDetail(item.id)">
+      <img [src]="item.images[0]" alt="{{item.title}}">
+      <div class="card-body">
+        <h5 class="card-title">{{ item.title }}</h5>
+        <p class="card-text">${{ item.price }}</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+
+
+<app-footer></app-footer>
